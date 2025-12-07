@@ -7,9 +7,9 @@ on:
 jobs:
   Deploy:
       runs-on: ubuntu-latest
-      steps:
-        - uses: actions/checkout@v2
-        - name: Deploy my webserver 1
+        steps:
+          - uses: actions/checkout@v2
+          - name: Deploy my webserver 1
         env:
           PRIVATE_KEY: ${{ secrets.EC2_SSH_KEY}}
           HOSTNAME: ${{ secrets.EC2_HOST }}
